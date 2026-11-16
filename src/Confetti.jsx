@@ -1,6 +1,6 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 
-const COLORS = ["#e0b45a", "#f6e3b0", "#c23b52", "#e8798b", "#3d5bd6", "#f6ecd6", "#ffffff"];
+const COLORS = ["#e0b45a", "#f6e3b0", "#2fa77a", "#8fe0bd", "#18956a", "#f6ecd6", "#ffffff"];
 
 // Canvas confetti — koi library nahi, taake page tez khule.
 const Confetti = forwardRef(function Confetti(_, ref) {

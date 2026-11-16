@@ -1,6 +1,6 @@
 // Interactive SVG cake: tap = phoonk maariye, dobara tap = candles dobara jala dein.
 const CANDLES = [
-  { x: 92, h: 34, c: "#c23b52" },
+  { x: 92, h: 34, c: "#2fa77a" },
   { x: 130, h: 44, c: "#e0b45a" },
   { x: 168, h: 34, c: "#f6ecd6" },
 ];
@@ -22,8 +22,8 @@ export default function Cake({ lit, onToggle }) {
             <stop offset="1" stopColor="#c98f2f" />
           </linearGradient>
           <linearGradient id="rose" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#d9566c" />
-            <stop offset="1" stopColor="#7d1527" />
+            <stop offset="0" stopColor="#2fa77a" />
+            <stop offset="1" stopColor="#0b4a35" />
           </linearGradient>
           <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stopColor="#fff4dd" />
@@ -38,7 +38,7 @@ export default function Cake({ lit, onToggle }) {
 
         {/* plate */}
         <ellipse cx="130" cy="228" rx="118" ry="14" fill="url(#gold)" />
-        <ellipse cx="130" cy="224" rx="104" ry="10" fill="#141a3d" />
+        <ellipse cx="130" cy="224" rx="104" ry="10" fill="#06301f" />
 
         {/* bottom tier */}
         <rect x="30" y="148" width="200" height="76" rx="14" fill="url(#rose)" />
@@ -53,7 +53,7 @@ export default function Cake({ lit, onToggle }) {
         </g>
 
         {/* top tier */}
-        <rect x="64" y="100" width="132" height="56" rx="12" fill="#24399a" />
+        <rect x="64" y="100" width="132" height="56" rx="12" fill="#127a54" />
         <path
           d="M64 112 q11 14 22 0 t22 0 t22 0 t22 0 t22 0 t22 0 v-8 a12 12 0 0 0 -12 -12 H76 a12 12 0 0 0 -12 12z"
           fill="url(#cream)"

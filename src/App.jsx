@@ -82,7 +82,6 @@ export default function App() {
   };
 
   const initial = CONFIG.name.trim()[0]?.toUpperCase() ?? "M";
-  const wa = `https://wa.me/?text=${encodeURIComponent(SHARE_TEXT)}`;
 
   return (
     <>
@@ -228,7 +227,6 @@ export default function App() {
             <p className="big-name">{CONFIG.name}</p>
             <div className="actions">
               <button className="btn" onClick={copy}>{copied ? "✓ Copy ho gaya" : "📋 Message copy karein"}</button>
-              <a className="btn ghost" href={wa} target="_blank" rel="noopener noreferrer">💬 WhatsApp par bhejein</a>
             </div>
             <span className="sr-only" role="status">{copied ? "Message copied" : ""}</span>
           </div>
